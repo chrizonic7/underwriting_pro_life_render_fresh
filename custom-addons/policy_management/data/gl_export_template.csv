@@ -1,0 +1,3 @@
+Journal,Date,Account,Partner,Label,Debit,Credit,Currency
+JV001,2025-01-01,400100,Customer A,Premium Payment,1000,,USD
+JV001,2025-01-01,100200,,Bank Payment,,1000,USD

@@ -1,0 +1,112 @@
+<odoo>
+  <record id="underwriting_pro_life_feature_doc" model="ir.ui.view">
+    <field name="name">underwriting.pro.life.features</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+      <div class="oe_structure">
+        <h2>Underwriting Pro Life – Core Modules & Features</h2>
+        <h3>Policy Creation & Administration</h3>
+        <p>Create, manage, and administer insurance policies. Capture policyholder data, configure plans, and manage the policy lifecycle.</p>
+
+        <h3>Policy Endorsements</h3>
+        <p>Modify policy terms, add or remove riders, and adjust coverage in response to customer risk appetite with full audit trails.</p>
+
+        <h3>Policy Renewals</h3>
+        <p>Track renewals, send automated notifications, and allow policy extension with updated terms.</p>
+
+        <h3>Underwriting</h3>
+        <p>Automated risk assessment and flexible tariff administration with underwriting rules engine and risk profiling.</p>
+
+        <h3>Policy Quoting</h3>
+        <p>Generate customizable quotes with varying deductibles and coverage. Quote tracking and conversion included.</p>
+
+        <h3>Premium Collection</h3>
+        <p>Integrated with digital payment gateways for real-time collections, payment tracking, and reconciliation.</p>
+
+        <h3>Reinsurance Management</h3>
+        <p>Automated allocation across Facultative, Quota Share, and Excess of Loss programs at policy level.</p>
+
+        <h2>Claims Management Suite</h2>
+        <h3>Claims Reporting</h3>
+        <p>Multiple reporting channels including mobile, web, and USSD with document uploads.</p>
+
+        <h3>Claims Processing</h3>
+        <p>Guided workflow for validation, verification, and case escalation.</p>
+
+        <h3>Claims Decision Support</h3>
+        <p>Rule-based automation with manual override and access to policy and historical data.</p>
+
+        <h3>Claims Communication</h3>
+        <p>Real-time status updates to stakeholders via email/SMS alerts and notifications.</p>
+
+        <h3>Claims Settlement</h3>
+        <p>Generate payment or denial letters, and automate disbursement through connected platforms.</p>
+
+        <h3>Fraud Detection</h3>
+        <p>Analytics-driven flagging system to catch and report suspicious claims.</p>
+
+        <h3>Reinsurance Recovery</h3>
+        <p>Trigger recovery workflows per reinsurance participation model with reporting.</p>
+
+        <h3>Claims Analytics</h3>
+        <p>Insights into claims volume, frequency, adjuster performance, and predictive metrics.</p>
+      
+        <h2>Reinsurance Features</h2>
+        <p>Manage all aspects of reinsurance accounting and risk distribution:</p>
+        <ul>
+          <li>Track reinsurance premiums, recoveries, and losses.</li>
+          <li>Review reinsurance distribution before posting to the financial module.</li>
+          <li>Support for Treaty and Facultative endorsements without altering base policies.</li>
+          <li>Apply and review Maximum Probable Loss (MPL) and Estimated Maximum Loss (EML).</li>
+          <li>Prorate Facultative placements based on insurer share.</li>
+          <li>Manage Political Violence & Terrorism (PVT) reinsurance alongside standard policy reinsurance.</li>
+          <li>Attach policy wordings and survey reports for underwriting and reinsurance reference.</li>
+          <li>Generate detailed reinsurance slips for tracking Facultative treaty placements.</li>
+          <li>Handle multiple risks (by location/business class) under a single policy with distinct reinsurance arrangements.</li>
+          <li>Integrate treaty accounting with bordereaux reporting capabilities.</li>
+          <li>Enable finance and reinsurance teams to collaborate on payment tracking from one interface.</li>
+          <li>Automated GL control for receivables and payables to streamline reconciliation.</li>
+        </ul>
+
+    
+        <h2>Finance Module Features</h2>
+        <h3>Key Functions</h3>
+        <ul>
+          <li><strong>Accounts Payable:</strong> Manage payments owed to customers, suppliers, and creditors. Integrated with claims, reinsurance, and premium refund workflows.</li>
+          <li><strong>Accounts Receivable:</strong> Efficiently track incoming payments with simplified premium collection tools.</li>
+          <li><strong>General Ledger:</strong> Track all financial transactions including payables, receivables, and journal entries.</li>
+          <li><strong>Financial Reporting:</strong> Generate balance sheets, income statements, and cash flow statements for financial health insights.</li>
+          <li><strong>Bank Reconciliation:</strong> Reconcile bank accounts with accounting records to ensure accuracy.</li>
+        </ul>
+
+        <h3>Advanced Financial Management</h3>
+        <ul>
+          <li><strong>Budgeting & Forecasting:</strong> Upload and manage annual budgets and compare with actual performance.</li>
+          <li><strong>Multi-Currency Support:</strong> Manage cross-currency transactions and convert seamlessly.</li>
+          <li><strong>Tax Management:</strong> Automate VAT, withholding tax, and regulatory tax calculations.</li>
+        </ul>
+
+        <h3>Other Financial Functions</h3>
+        <ul>
+          <li>Support for cross-currency premium transactions.</li>
+          <li>Invoice requisition workflow with automatic tax computation.</li>
+          <li>Payment request workflow that auto-generates Payment Vouchers (PVs).</li>
+          <li>Petty cash management with allocations and reimbursements.</li>
+          <li>Batch upload support for JVs, PVs, and RVs.</li>
+          <li>Auto-reversal and auto-correction of JVs.</li>
+          <li>Exchange difference calculation and posting.</li>
+          <li>Year-end processing to transfer net revenue and expenditure.</li>
+          <li>Support for Unearned Premiums and Translation Exchange Differences.</li>
+          <li>API-ready for Payroll and Fixed Asset integrations.</li>
+          <li>Multi-currency reporting and composite transaction processing.</li>
+          <li>Online payment platform integration (e.g., Mobile Money, Credit/Debit Cards).</li>
+          <li>IFRS-compliant structure and support for regulatory reports (SDR, FCR, etc.).</li>
+          <li>Comprehensive audit trail of all system activities with time-stamped logs.</li>
+          <li>Role-based access control and segregation of duties.</li>
+          <li>Document attachments to JVs, PVs, and RVs.</li>
+        </ul>
+
+    </div>
+    </field>
+  </record>
+</odoo>

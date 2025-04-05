@@ -1,0 +1,32 @@
+<odoo>
+  <record id="view_finance_dashboard" model="ir.ui.view">
+    <field name="name">finance.dashboard</field>
+    <field name="model">account.move</field>
+    <field name="arch" type="xml">
+      <kanban class="o_kanban_dashboard">
+        <templates>
+          <t t-name="kanban-box">
+            <div class="o_kanban_card">
+              <field name="name"/>
+              <div>Total: <field name="amount_total"/></div>
+              <div>Date: <field name="date"/></div>
+              <div>Status: <field name="state"/></div>
+            </div>
+          </t>
+        </templates>
+      </kanban>
+    </field>
+  </record>
+
+  <record id="action_finance_dashboard" model="ir.actions.act_window">
+    <field name="name">Finance Dashboard</field>
+    <field name="res_model">account.move</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="view_id" ref="view_finance_dashboard"/>
+  </record>
+
+  <menuitem id="menu_finance_dashboard_root"
+            name="Finance Dashboard"
+            parent="menu_policy_root"
+            action="action_finance_dashboard"/>
+</odoo>

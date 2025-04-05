@@ -1,0 +1,68 @@
+<odoo>
+  <record id="view_policy_form" model="ir.ui.view">
+    <field name="name">policy.policy.form</field>
+    <field name="model">policy.policy</field>
+    <field name="arch" type="xml">
+      <form string="Policy">
+        <group>
+          <field name="name"/>
+          <field name="policy_number"/>
+          <field name="policy_type"/>
+          <field name="occupation"/>
+          <field name="dob"/>
+          <field name="age" readonly="1"/>
+        </group>
+        <group string="Policy Details">
+          <field name="basic_rate"/>
+          <field name="sum_assured"/>
+          <field name="duration_years"/>
+          <field name="modal_factor"/>
+          <field name="is_hazardous"/>
+          <field name="hazardous_rate"/>
+        </group>
+        <group string="Premium">
+          <field name="premium" readonly="1"/>
+          <field name="sai" readonly="1"/>
+          <field name="policy_fee" readonly="1"/>
+          <field name="total_premium" readonly="1"/>
+        </group>
+        <notebook>
+          <page string="Documents">
+            <field name="documents">
+              <tree editable="bottom">
+                <field name="name"/>
+                <field name="doc_type"/>
+                <field name="file_name"/>
+                <field name="file"/>
+              </tree>
+            </field>
+          </page>
+        </notebook>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_policy_tree" model="ir.ui.view">
+    <field name="name">policy.policy.tree</field>
+    <field name="model">policy.policy</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="policy_number"/>
+        <field name="policy_type"/>
+        <field name="sum_assured"/>
+        <field name="total_premium"/>
+      </tree>
+    </field>
+  </record>
+
+  <menuitem id="menu_policy_root" name="Underwriting Pro Life"/>
+  <menuitem id="menu_policy_management" name="Policy Management" parent="menu_policy_root"/>
+  <menuitem id="menu_policy" name="Policies" parent="menu_policy_management" action="action_policy"/>
+
+  <record id="action_policy" model="ir.actions.act_window">
+    <field name="name">Policies</field>
+    <field name="res_model">policy.policy</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

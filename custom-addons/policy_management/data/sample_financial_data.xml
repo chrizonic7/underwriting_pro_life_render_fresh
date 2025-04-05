@@ -1,0 +1,8 @@
+<odoo>
+  <record id="demo_jv_entry" model="account.move">
+    <field name="move_type">entry</field>
+    <field name="date">2025-01-01</field>
+    <field name="journal_id" ref="account.general_journal"/>
+    <field name="line_ids" eval="[(0, 0, {'account_id': ref('account.data_account_type_revenue'), 'name': 'Premium Income', 'debit': 1000, 'credit': 0}), (0, 0, {'account_id': ref('account.data_account_type_asset'), 'name': 'Bank', 'debit': 0, 'credit': 1000})]"/>
+  </record>
+</odoo>
